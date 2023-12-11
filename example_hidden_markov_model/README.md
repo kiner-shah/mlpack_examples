@@ -1,6 +1,8 @@
-Dataset info - https://paperswithcode.com/dataset/tweebank
-Data - https://raw.githubusercontent.com/Oneplus/Tweebank/dev/en-ud-tweet-train.conllu
-CoNLL format - https://universaldependencies.org/format.html
+- Dataset info - https://paperswithcode.com/dataset/tweebank
+- Data - https://raw.githubusercontent.com/Oneplus/Tweebank/dev/en-ud-tweet-train.conllu
+- CoNLL format - https://universaldependencies.org/format.html
+- Word list: https://norvig.com/ngrams/word.list
+- POS tags list: https://universaldependencies.org/u/pos/index.html
 
 ### Download data
 ```
@@ -8,7 +10,7 @@ wget "https://raw.githubusercontent.com/Oneplus/Tweebank/dev/en-ud-tweet-train.c
 ```
 ### Run preprocessing
 ```
-g++ preprocess_conll.cpp -fsanitize=address -std=c++20
+g++ preprocess_conll.cpp -o preprocess -fsanitize=address -std=c++20
 ```
 ### Run training
 ```
